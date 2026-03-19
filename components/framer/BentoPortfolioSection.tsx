@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 const projects = [
   { num: "01", label: "КŌJI Restaurant", tag: "Ресторант", src: "/demo2.mov" },
   { num: "02", label: "Nexus SaaS Platform", tag: "SaaS / Технология", src: "/demo.mov" },
+  { num: "03", label: "Club 21", tag: "Ресторант", src: "/demo3.mov" },
 ];
 
 export default function BentoPortfolioSection() {
@@ -124,6 +125,7 @@ export default function BentoPortfolioSection() {
                       muted
                       loop
                       playsInline
+                      preload="none"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 pointer-events-none"
@@ -164,6 +166,7 @@ export default function BentoPortfolioSection() {
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{
                     opacity: active === i ? 1 : 0,
