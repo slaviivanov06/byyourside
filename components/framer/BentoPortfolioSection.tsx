@@ -169,8 +169,8 @@ export default function BentoPortfolioSection() {
                   playsInline
                   preload="none"
                   className="absolute inset-0 w-full h-full"
-                  style={{ objectFit: p.fit }}
                   style={{
+                    objectFit: p.fit,
                     opacity: active === i ? 1 : 0,
                     transition: "opacity 0.5s ease",
                   }}
