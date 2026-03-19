@@ -3,9 +3,9 @@
 import { useState, useRef } from "react";
 
 const projects = [
-  { num: "01", label: "КŌJI Restaurant", tag: "Ресторант", src: "/demo2.mov" },
-  { num: "02", label: "Nexus SaaS Platform", tag: "SaaS / Технология", src: "/demo.mov" },
-  { num: "03", label: "Club 21", tag: "Ресторант", src: "/demo3.mov" },
+  { num: "01", label: "КŌJI Restaurant", tag: "Ресторант", src: "/demo2.mov", fit: "cover" as const },
+  { num: "02", label: "Nexus SaaS Platform", tag: "SaaS / Технология", src: "/demo.mov", fit: "cover" as const },
+  { num: "03", label: "Club 21", tag: "Ресторант", src: "/demo3.mov", fit: "contain" as const },
 ];
 
 export default function BentoPortfolioSection() {
@@ -126,7 +126,8 @@ export default function BentoPortfolioSection() {
                       loop
                       playsInline
                       preload="none"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full"
+                      style={{ objectFit: p.fit }}
                     />
                     <div className="absolute inset-0 pointer-events-none"
                       style={{ background: "linear-gradient(to top, rgba(10,15,30,0.7) 0%, transparent 50%)" }} />
@@ -167,7 +168,8 @@ export default function BentoPortfolioSection() {
                   loop
                   playsInline
                   preload="none"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ objectFit: p.fit }}
                   style={{
                     opacity: active === i ? 1 : 0,
                     transition: "opacity 0.5s ease",
