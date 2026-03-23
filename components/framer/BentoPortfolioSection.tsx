@@ -3,9 +3,11 @@
 import { useState, useRef } from "react";
 
 const projects = [
-  { num: "01", label: "КŌJI Restaurant", tag: "Ресторант", src: "/demo2.mov", fit: "cover" as const },
-  { num: "02", label: "Nexus SaaS Platform", tag: "SaaS / Технология", src: "/demo.mov", fit: "cover" as const },
-  { num: "03", label: "Club 21", tag: "Ресторант", src: "/demo3.mov", fit: "contain" as const },
+  { num: "01", label: "КŌJI Restaurant", tag: "Ресторант", src: "/demo2.mp4", fit: "cover" as const },
+  { num: "02", label: "Nexus SaaS Platform", tag: "SaaS / Технология", src: "/demo.mp4", fit: "cover" as const },
+  { num: "03", label: "Club 21", tag: "Ресторант", src: "/demo3.mp4", fit: "contain" as const },
+  { num: "04", label: "Sociale Empire", tag: "Социални мрежи", src: "/demo4.mp4", fit: "cover" as const },
+  { num: "05", label: "Zubolekar", tag: "Дентална клиника", src: "/demo5.mp4", fit: "cover" as const },
 ];
 
 export default function BentoPortfolioSection() {
